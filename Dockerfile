@@ -32,18 +32,18 @@ RUN \
       ssdeep \
       unrar-free \
       upx \
-      zip \ 
+      zip \
       yara \
       tshark \
       tcpdump \
-      zlib1g-dev && \ 
+      zlib1g-dev && \
   apt-get clean && rm -rf /var/lib/apt/lists/*
 
 RUN eatmydata easy_install --script-dir=/usr/bin -U pip
 
 RUN eatmydata /usr/bin/pip install \
       anyjson==0.3.3 \
-      bitstring==3.1.3 \
+      bitstring==3.1.5 \
       cybox==2.1.0.5 \
       python-dateutil==2.2 \
       defusedxml==0.4.1 \
