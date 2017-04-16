@@ -1,8 +1,8 @@
 crits:
   build: .
   volumes:
-    - dev/config:/config
-    - docker:/docker
+    - ./dev/config:/config
+    - ./docker:/docker
   links:
     - mongodb
   environment:
